@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/styles-preprocessor.css">
+    <title>Самые популярные вопросы и ответы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру" width="70" height="70"></a>
+            <span class="select-sity">Выберите город</span>
+            <select class="sitys" onchange="window.location.href=this.options[this.selectedIndex].value">
+                <option value="index.html">Омск</option>
+                <option value="http://ru.stackoverflow.com/">Питер</option>
+            </select>
+            <a class="header-icon__phone" href="tel:+73852594241">Звонок с сайта<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use>
+                <symbol id="icon-phone" viewBox="0 0 32 32">
+                    <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+                    </symbol>
+            </svg></a>
+        </div>
+        <nav class="main-menu container">
+           <input id="menu__toggle" type="checkbox"/>
+           <label class="menu__btn" for="menu__toggle">
+              <span></span>
+           </label>
+            <ul class="main-menu__links">
+                <li class="main-menu__link"><a href="index.html#price-list">Тарифы для квартиры</a></li>
+                <li class="main-menu__link"><a href="chastnyy-dom.html#chastnyy-dom">Тарифы для частного дома</a></li>
+                <li class="main-menu__link active"><a href="#help">Помощь</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="faq">
+            <h1 id="help" class="section-title container">Самые популярные вопросы и ответы</h1>
+            <ul class="faq-list container">
+                <li class="faq-list__description description-inside"><span><i class="icon-faq"><img src="img/icon.svg" alt="" width="50" height="50"></i>Оплата</span> 
+                    <ul class="description-inside__list">
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как оплатить услуги?</p>
+                                <p class="description-inside__subtitle hidden">Вы можете оплатить услуги удобным для вас способом:</p>
+                                <ul class="description-inside__text list-faq hidden">
+                                    <li class="list-faq__item">картой;</li>
+                                    <li class="list-faq__item">с мобильного счета;</li>
+                                    <li class="list-faq__item">через приложение «Сбербанк-онлайн»;</li>
+                                    <li class="list-faq__item">Qiwi wallet;</li>
+                                    <li class="list-faq__item">Yandex wallet.</li>
+                                </ul>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Что такое «Обещанный платеж»?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">«Обещанный платеж» — опция, предоставляющая возможность доступа к услугам при балансе меньше или равном нулю на определенный период.
+                                    Для Клиентов моно-интернета (на договоре только одна услуга интернет) и комплексного предложения (договор из 2-х или 3-х услуг) «Обещанный платеж» предоставляется на 5 суток.
+                                    Для подключения услуги войдите в личный кабинет, выберите раздел «Платежи» и пункт «Обещанный платеж». Затем выберите сумму, которая необходима для активации тарифа, если вы Клиент моно-интернета (для Клиентов комплексного предложения сумма будет указана по умолчанию). 
+                                    Нажмите «Согласен».
+                                    На следующем шаге подтвердите операцию. После активации сервиса необходимо через 5 минут завершить текущее соединение и установить новое.
+                                    Подробные условия предоставления опции размещены в разделе <a href="https://domru.ru/promised?_ga=2.175634018.1512922580.1605858587-1474562174.1592923451"> «Обещанный платеж».</a>
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Когда необходимо оплачивать услуги?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Пользователям комплексного предложения (договор из 2-х или 3-х услуг), а также моно-услуг телефонии или кабельного/ЦКТВ (на договоре только одна услуга) рекомендуем вносить абонентскую плату до 1 числа месяца, следующего за месяцем пользования услугами. Например, за услуги, оказанные в июле, рекомендуем заплатить до 1 августа. Если вы являетесь пользователем моно-услуги интернет, то оплачивать необходимо до первого числа месяца пользования услугой. Например, чтобы пользоваться услугами в августе, необходимо пополнить баланс до 31 июля (включительно).
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Не активирован тариф. Что делать?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    В первую очередь — проверьте баланс. Если он меньше размера абонентской платы за месяц, то необходимо пополнить счет. 
+                                    Если на счету достаточно денежных средств, и произошло списание, то достаточно переподключить соединение к интернету и прописать адрес любой страницы вручную.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как подключить автоматический платеж?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Зайдите в <a href="https://domru.ru/user/login?_ga=2.20848632.1512922580.1605858587-1474562174.1592923451">личный кабинет</a> на сайте Дом.ru. Для входа потребуется указать номер договора (12 цифр) или логин и пароль. 
+                                    В личном кабинете выберите раздел <a href="https://barnaul.domru.ru/domru.ru/balance_history">«Платежи»</a>, затем пункт <a href="https://domru.ru/payments/auto?_ga=2.215898071.1512922580.1605858587-1474562174.1592923451">«Автоплатеж»</a>.
+                                    Также вы можете изучить подробную <a href="http://yola.console.ertelecom.ru/service/knowledgebase/article/146">инструкцию, как подключить автоматический платеж</a>
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Предоставляется ли рассрочка?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Вы можете воспользоваться услугой «Обещанный платеж». Погасить обещанный платеж можно в течение 5 дней. Активировать услугу можно в <a href="https://domru.ru/promised?_ga=2.254670536.1512922580.1605858587-1474562174.1592923451">личном кабинете</a> 
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Какова сумма оплаты при подключении?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    В сумму оплаты входит абонентская плата по выбранному тарифу и стоимость подключения.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Где можно посмотреть детализацию счета?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    В <a href="https://domru.ru/balance_history?_ga=2.247872455.1512922580.1605858587-1474562174.1592923451">личном кабинете</a> в разделе «История баланса».
+                                </p>
+                             </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="faq-list container">
+                <li class="faq-list__description description-inside"><span><i class="icon-faq"><img src="img/icon.svg" alt="" width="50" height="50"></i>Подключение</span> 
+                    <ul class="description-inside__list">
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Какую технологию подключения вы используете?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Сеть «Дом.ru» построена по технологии «оптика до дома». Это означает, что кабель, по которому подается сигнал, доходит до каждого дома, что позволяет передавать сигнал без помех, независимо от того, какую услугу вы потребляете: интернет, кабельное телевидение или домашний телефон. В отличие, например, от спутникового интернета, данная технология позволяет не только предоставлять более качественные услуги, но также снизить их стоимость и избежать использования дополнительного оборудования.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">При подключении техники проведут кабель до моего оборудования или только заведут его в квартиру?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Линия прокладывается до оборудования (Телевизор, ПК). В случае, если по квартире проложен подходящий кабель, линия может быть проложена до входной двери.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Производится ли настройка необходимого оборудования?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Да. При подключении производится настройка ПК и/или телевизора.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Каков срок подключения после заключения договора?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Подключение будет осуществлено в течение 5 дней.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Если кабель уже проведен, нужно ли прокладывать новый кабель при подключении?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Если существующая линия в квартире без видимых повреждений, то подключение возможно через нее. 
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как узнать, могу ли я подключиться к услугам?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Чтобы узнать, возможно ли подключиться к услугам Дом.ru, необходимо проверить <a href="https://domru.ru/request/address?_ga=2.72933139.1079980527.1606734320-1474562174.1592923451" target="_blank">адрес.</a> 
+                                    Если доступен — оставить заявку на подключение. С вами свяжется специалист и уточнит детали для подключения к услугам.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Можно ли вызвать мастера для настройки моего оборудования?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Да. Есть возможность создать заявку на услугу «Помощник по дому» (услуга платная). Для этого необходимо обратиться в контакт-центр.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Что делать при некачественном подключении?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Обратитесь в контакт-центр по телефону, указанному на сайте.
+                                </p>
+                             </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="faq-list container">
+                <li class="faq-list__description description-inside"><span><i class="icon-faq"><img src="img/icon.svg" alt="" width="50" height="50"></i>Дом.ru Wi-Fi</span> 
+                    <ul class="description-inside__list">
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как подключиться к сети Дом.ru Wi-Fi?</p>
+                                <p class="description-inside__subtitle hidden">Подключение к сети можно осуществить с любого устройства оснащённого модулем Wi-Fi и с установленным браузером сети интернет.
+                                    <br>Для подключения необходимо:
+                                </p>
+                                <ul class="description-inside__text list-faq hidden">
+                                    <li class="list-faq__item">Включить модуль Wi-Fi.</li>
+                                    <li class="list-faq__item">Выбрать из списка сетей «Дом.ru Wi-Fi» и подключиться к ней.</li>
+                                    <li class="list-faq__item">Открыть браузер и перейти на любой адрес в сети.</li>
+                                    <li class="list-faq__item">На открывшемся портале авторизации выбрать одну из двух опций входа — как «Абонент» Дом.ru или как Гость.</li>
+                                    <li class="list-faq__item">Если вы являетесь пользователем договора интернет, вы можете авторизоваться при входе как абонент. Для этого вам необходимо ввести свой номер договора и пароль от личного кабинета, затем нажать на кнопку «Войти».</li>
+                                    <li class="list-faq__item">При входе как «Гость» на некоторых точках вам может потребоваться SMS-подтверждение. Для этого укажите номер своего мобильного телефона и нажмите на кнопку «Получить SMS-код». Полученный код введите в поле ниже и нажмите на кнопку «Войти».</li>
+                                    <li class="list-faq__item">Услуга в обоих случаях предоставляется бесплатно.</li>
+                                </ul>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Раньше подключался напрямую, а теперь купил маршрутизатор. Что делать дальше?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Рекомендуем обратиться к инструкциям в разделе <a href="https://angarsk.domru.ru/service/knowledgebase/category/25?_ga=2.114537479.1079980527.1606734320-1474562174.1592923451" target="_blank">«Настройка Wi-Fi роутеров»</a>  для самостоятельной настройки подключения через маршрутизатор.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Не могу выйти в интернет. У меня маршрутизатор (роутер)</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    В этом случае необходимо проверить все ли индикаторы горят на устройстве. Перезагрузите его, отключив от питания на 10 минут. Если ситуация сохраняется, подключите кабель напрямую и проверьте, какую ошибку выдает компьютер. Если компьютер не выдает ошибку, то проблема в маршрутизаторе.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как узнать пароль от домашнего Wi-Fi?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Пароль от домашнего Wi-Fi можно узнать, позвонив в информационно-справочный центр Дом.ru по номеру 8-800-333-7000. Операторы всегда будут рады вам помочь.
+
+                                </p>
+                             </div>
+                        </li>
+                       <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как обновить прошивку Wi-Fi роутера Дом.ru?</p>
+                                <ul class="description-inside__text list-faq hidden">
+                                    <li class="list-faq__item">Откройте ваш браузер и в адресной строке введите 192.168.0.1. </li>
+                                    <li class="list-faq__item">В открывшемся окне вам необходимо нажать на ссылку «Обновить прошивку» в нижнем левом углу окна браузера.</li>
+                                    <li class="list-faq__item">Далее ваш роутер автоматически проверит новую версию прошивки.</li>
+                                    <li class="list-faq__item">В следующем окне вы увидите информацию о текущей версии и новой версии прошивки вашего роутера. Для автоматического обновления прошивки роутера вам необходимо выбрать «Обновить».</li>
+                                    <li class="list-faq__item">Пожалуйста, дождитесь завершения операции обновления прошивки. Обновление может занять до 5 минут (в это время не выключайте питание роутера и интернет-кабель).</li>
+                                    
+                                </ul>
+								<p class="description-inside__subtitle hidden">Обратите внимание, что настройки учетных данных останутся без изменений.</p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Как скачать приложение для поиска точек доступа Дом.ru Wi-Fi?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Скачайте приложение через официальные магазины <a href="https://play.google.com/store/apps/details?id=ru.domru.wifi" target="_blank">Play Market</a> (для устройств на операционной системе Android) и <a href="https://itunes.apple.com/us/app/dom.ru-wi-fi/id603389740?ls=1&mt=9" target="_blank">AppStore</a> (для устройств на операционной системе iOS). 
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Я владелец заведения и хочу установить/у меня не работает Дом.ru Wi-Fi?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    Обратитесь по телефону 8-800-333-9000 и наши специалисты помогут ответить на все ваши вопросы.
+                                </p>
+                             </div>
+                        </li>
+                        <li class="description-inside__listitem">
+                            <div class="description-inside__container">
+                                <p class="description-inside__title">Какие устройства поддерживаются?</p>
+                                <p class="description-inside__subtitle hidden"></p>
+                                <p class="description-inside__text hidden">
+                                    В настоящий момент сеть «Дом.ru Wi-Fi» поддерживают абсолютно все устройства, оснащённые модулем Wi-Fi и установленным web-браузером с поддержкой cookies.
+                                </p>
+                             </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="naim-footer">
+        <div class="main-footer__row container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру"></a>
+            <span class="privacy">© 2020 | Privacy Policy</span>
+        </div>  
+    </footer>
+    <script src="js/accardeon.js"></script>
+</body>
+</html>
