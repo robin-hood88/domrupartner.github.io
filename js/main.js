@@ -5,6 +5,9 @@ var btn = priceList.querySelectorAll('.btn');
 var linkActive = document.querySelector('.main-menu__link.active');
 var menu = document.querySelector('.menu__toggle');
 
+var spanHidden = document.querySelector('.nojs').style.display="inline";
+var selectSity = document.querySelector('#select-sity').style.display="inline";
+
 let setTarif = function(option,btn) {
     btn.addEventListener('click', function() {
     if (btn.getAttribute('data-tarif') == option.value) {
@@ -21,3 +24,4 @@ for (var i = 0; i < btn.length; i++) {
 linkActive.addEventListener('click', function(){
   location.reload(); 
 });
+

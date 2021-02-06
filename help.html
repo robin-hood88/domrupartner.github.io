@@ -11,10 +11,14 @@
     <div class="header">
         <div class="header-logo container">
             <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру" width="70" height="70"></a>
-            <span class="select-sity">Выберите город</span>
-            <select class="sitys" onchange="window.location.href=this.options[this.selectedIndex].value">
+            <span class="select-sity nojs">Выберите город</span>
+            <noscript>
+            <a href="#" class="select-sity">Выберите город</a>
+            </noscript>
+            <select id ="select-sity" class="sitys" onchange="window.location.href=this.options[this.selectedIndex].value">
                 <option value="index.html">Омск</option>
-                <option value="http://ru.stackoverflow.com/">Питер</option>
+                <option value="St.Petersburg.html">Санкт-Петербург</option>
+                <option value="Moscow.html">Москва</option>
             </select>
             <a class="header-icon__phone" href="tel:+73852594241">Звонок с сайта<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use>
                 <symbol id="icon-phone" viewBox="0 0 32 32">
@@ -302,7 +306,7 @@
     <footer class="naim-footer">
         <div class="main-footer__row container">
             <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру"></a>
-            <span class="privacy">© 2020 | Privacy Policy</span>
+            <span class="privacy">© 2020 Сайт не является средством массовой информации и действует на основании партнерских услуг с АО «ЭР-Телеком Холдинг»</span>
         </div>  
     </footer>
     <script src="js/accardeon.js"></script>

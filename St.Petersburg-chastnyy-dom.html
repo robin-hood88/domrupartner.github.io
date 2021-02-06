@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/styles-preprocessor.css">
-    <title>Подключить интернет в частный дом в Омске</title>
+    <title>Подключить интернет в частный дом в Питере</title>
 </head>
 <body>
     <div class="header">
@@ -17,7 +17,7 @@
             </noscript>
             <select id ="select-sity" class="sitys" onchange="window.location.href=this.options[this.selectedIndex].value">
                 <option value="index.html">Омск</option>
-                <option value="St.Petersburg.html">Санкт-Петербург</option>
+                <option value="St.Petersburg.html" selected>Санкт-Петербург</option>
                 <option value="Moscow.html">Москва</option>
             </select>
             <a class="header-icon__phone" href="tel:+73852594241">Звонок с сайта<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use>
@@ -32,42 +32,33 @@
               <span></span>
            </label>
             <ul class="main-menu__links">
-                <li class="main-menu__link"><a href="index.html#price-list">Тарифы для квартиры</a></li>
-                <li class="main-menu__link active"><a href="#chastnyy-dom">Тарифы для частного дома</a></li>
+                <li class="main-menu__link"><a href="St.Petersburg.html#price-list">Тарифы для квартиры</a></li>
+                <li class="main-menu__link active"><a href="St.Petersburg-chastnyy-dom.html#chastnyy-dom">Тарифы для частного дома</a></li>
                 <li class="main-menu__link"><a href="help.html#help">Помощь</a></li>
             </ul>
         </nav>
     </div>
     <main>
         <section class="price container">
-            <h1 id="chastnyy-dom" class="section-title">Тарифы домашнего интернета и цифрового ТВ для частного дома в Омске</h1>
+            <h1 id="chastnyy-dom" class="section-title">Тарифы домашнего интернета и цифрового ТВ для частного дома в Питере</h1>
             <ul class="price-list container">
-                <li class="price-list__card tarif-s">
-                   <p class="price-list__title">Современный дом S</p>
-                   <div class="price-list__parameters parameter">
-                       <p class="parameter__discription">Интернет<span class="parameter__speed">75 Мбит/с</span></p>
-                       <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">159 каналов</span></p>
-                   </div>
-                   <p class="price-list__cost" data-cost="950 ₽/мес">950 ₽/мес - абонентская плата</p>
-                   <a href="#connect" class="btn" data-tarif="tarif-s">Подключить</a>
-                </li>
                 <li class="price-list__card tarif-l">
-                    <p class="price-list__title">Современный дом L</p>
+                    <p class="price-list__title">Мой дом.L</p>
                     <div class="price-list__parameters parameter">
                         <p class="parameter__discription">Интернет<span class="parameter__speed">100 Мбит/с</span></p>
-                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">196 каналов</span></p>
+                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">195 каналов</span></p>
                     </div>
-                    <p class="price-list__cost" data-cost="1100 ₽/мес">1100 ₽/мес - абонентская плата</p>
-                    <a href="#connect" class="btn" data-tarif="tarif-l">Подключить</a>
+                    <p class="price-list__cost" data-cost="1100 ₽/мес">1700 ₽/мес - абонентская плата</p>
+                    <a href="#connect" class="btn" data-tarif="tarif-l">Подключить</a>                
                  </li>
                  <li class="price-list__card">
-                    <p class="price-list__title">Современный дом XXL</p>
+                    <p class="price-list__title">Мой дом.XXL</p>
                     <div class="price-list__parameters parameter">
                         <p class="parameter__discription">Интернет<span class="parameter__speed">300 Мбит/с</span></p>
-                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">196 каналов</span></p>
+                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">195 каналов</span></p>
                     </div>
-                    <p class="price-list__cost" data-cost="1450 ₽/мес">1450 ₽/мес - абонентская плата</p>
-                    <a href="#connect" class="btn" data-tarif="tarif-xxl">Подключить</a>
+                    <p class="price-list__cost" data-cost="1450 ₽/мес">2200 ₽/мес - абонентская плата</p>
+                    <a href="#connect" class="btn" data-tarif="tarif-xxl">Подключить</a>                   
                  </li>
             </ul>
         </section>
@@ -94,8 +85,7 @@
                             <label>
                                 Выберите тариф
                                 <select class="user-tarif" name="tarifuser">
-                                    <option value="tarif-s" selected>S</option>
-                                    <option value="tarif-l">L</option>
+                                    <option value="tarif-l" selected>L</option>
                                     <option value="tarif-xxl">XXL</option>
                                 </select>
                             </label>

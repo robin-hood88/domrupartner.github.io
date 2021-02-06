@@ -10,6 +10,9 @@ var descriptionSubtitle = document.querySelectorAll('.description-inside__subtit
 var dexcriptionText = document.querySelectorAll('.description-inside__text');
 var activ = document.querySelector('.description-inside__list_activ');
 
+var spanHidden = document.querySelector('.nojs').style.display="inline";
+var selectSity = document.querySelector('#select-sity').style.display="inline";
+
 
 /*Функция clickSpan обработчик клика по тегу span, внутри .faq-list__description*/
 let clickSpan = function(span,icon,list) {

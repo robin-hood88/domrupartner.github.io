@@ -39,6 +39,11 @@ body {
   text-decoration: none;
 }
 
+span.select-sity.nojs,
+#select-sity {
+  display: none;
+}
+
 /*-----------------------------*/
 /*-----------------------------*/
 /*--------СТИЛИ ДЛЯ HEADER-----*/
@@ -375,7 +380,7 @@ body {
   background-color: #FFD400;
   color: #000;
   border: 1px solid #FFD400;
-  outline: none;
+  /*outline: none;*/
   -webkit-transition: background-color 0.35s ease;
   transition: background-color 0.35s ease;
   text-decoration: none;
@@ -386,11 +391,19 @@ body {
 .btn:focus-ring {
   outline: 12px solid blue;
 }
+
+/*  Стили для ссылки подробнее в карточке(Ссылка удалена из разметки 06.02.2021)
 .price-list__details {
   align-self: center;
   color: #fffafa;
   margin-top: 25px;
 }
+*/
+
+.connect {
+ margin-bottom: 20px;
+}
+
 /*Стили
  для мобильных устройств*/
 .icon {
@@ -459,7 +472,7 @@ select {
   cursor: pointer;
   background-color: #FFD400;
   border: 1px solid #FFD400;
-  outline: none;
+    /*outline: none;*/
   -webkit-transition: background-color 0.35s ease;
   transition: background-color 0.35s ease;
 }
@@ -620,4 +633,8 @@ input:valid:placeholder-shown {
 .privacy {
   display: inline-block;
   margin-left: 15px;
+}
+
+.naim-footer a {
+  display: inline-block;
 }
