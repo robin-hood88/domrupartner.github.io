@@ -1,0 +1,104 @@
+.main-form form {
+    max-width: 425px;
+}
+
+.main-form fieldset {
+    border: none;
+    box-shadow: 0 0 2px 0px grey;
+    border-radius: 8px;
+}
+
+.main-form legend {
+    background-color: #fff;
+}
+
+.main-form__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form__inner label {
+    margin-bottom: 15px;
+}
+
+.main-form__inner input,textarea,select {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius:5px;
+    /*outline: none;*/  /* Усли не none, доступность ок*/ 
+    outline: none;
+    border: 1px solid gray;
+    resize: none;
+    appearance: none;
+}
+
+.user-comment {
+    height: 80px;
+}
+
+.user-comment:focus {
+    border-color: green;
+}
+
+.main-form__inner select {
+    background-image: url(../img/-expand-more_89793.svg);
+    background-repeat: no-repeat;
+    background-position: 99%;
+    background-size: 40px 40px;
+}
+
+
+
+.btn {
+    margin-top: auto;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 13px 24px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FFD400;
+    border: 1px solid #FFD400;
+    outline: none;
+    -webkit-transition: background-color 0.35s ease;
+    transition: background-color 0.35s ease;
+}
+
+.btn:hover {
+    background-color: #FFE200;
+}
+
+.btn-submit {
+    margin: 0 auto;
+}
+
+.main-form__error {
+    display: none;
+    color: red;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .main-form__error {
+    display: block;
+}
+
+input:valid:placeholder-shown {
+    border-color: gray;
+}
+
+.confedicial {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 10px;
+}

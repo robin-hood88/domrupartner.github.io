@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/styles-preprocessor.css">
+    <title>Подключить интернет в Питере</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру" width="70" height="70"></a>
+            <span class="select-sity nojs">Выберите город</span>
+            <noscript>
+            <a href="#" class="select-sity">Выберите город</a>
+            </noscript>
+            <select id ="select-sity" class="sitys" onchange="window.location.href=this.options[this.selectedIndex].value" >
+                <option value="index.html">Омск</option>
+                <option value="St.Petersburg.html" selected>Санкт-Петербург</option>
+                <option value="Moscow.html">Москва</option>
+            </select>
+            <a class="header-icon__phone" href="tel:+73852594241">Звонок с сайта<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use>
+                <symbol id="icon-phone" viewBox="0 0 32 32">
+                    <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+                    </symbol>
+            </svg></a>
+        </div>
+        <nav class="main-menu container">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+            <ul class="main-menu__links">
+                <li class="main-menu__link active"><a href="#price-list">Тарифы для квартиры</a></li>
+                <li class="main-menu__link"><a href="St.Petersburg-chastnyy-dom.html#chastnyy-dom">Тарифы для частного дома</a></li>
+                <li class="main-menu__link"><a href="help.html#help">Помощь</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="price container">
+            <h1 id="price-list" class="section-title">Тарифы домашнего интернета и цифрового ТВ в Питере</h1>
+            <ul class="price-list container">
+                <li class="price-list__card tarif-m" data-tarif="M">
+                    <div class="price-list__wrap">
+                      <p class="price-list__title">Mega M</p>
+                    <div class="price-list__parameters parameter">
+                        <p class="parameter__discription">Интернет<span class="parameter__speed">100 Мбит/с</span></p>
+                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">158 каналов</span></p>
+                    </div>
+                    <p class="price-list__cost" data-cost="800 ₽/мес">750 ₽/мес - абонентская плата</p>
+                    <a href="#connect" class="btn" data-tarif="tarif-m">Подключить</a>          
+                    </div>
+                          
+                 </li>
+                 <li class="price-list__card tarif-l" data-tarif="L">
+                    <div class="price-list__wrap">
+                      <p class="price-list__title">Mega L</p>
+                    <div class="price-list__parameters parameter">
+                        <p class="parameter__discription">Интернет<span class="parameter__speed">300 Мбит/с</span></p>
+                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">158 каналов</span></p>
+                    </div>
+                    <p class="price-list__cost" data-cost="900 ₽/мес">850 ₽/мес - абонентская плата</p>
+                    <a href="#connect" class="btn" data-tarif="tarif-l" >Подключить</a>         
+                    </div>
+                    
+                 </li>
+                 <li class="price-list__card" data-tarif="XL">
+                    <div class="price-list__wrap">
+                       <p class="price-list__title">Mega XL</p>
+                    <div class="price-list__parameters parameter">
+                        <p class="parameter__discription">Интернет<span class="parameter__speed">600 Мбит/с</span></p>
+                        <p class="parameter__discription">Телевидение<span class="parameter__tvchannels">195 каналов</span></p>
+                    </div>
+                    <p class="price-list__cost" data-cost="1100 ₽/мес">1150 ₽/мес - абонентская плата</p>
+                    <a href="#connect" class="btn" data-tarif="tarif-xxl">Подключить</a>             
+                    </div>
+                    
+                 </li>
+            </ul>
+        </section>
+        <section class="connect container">
+            <h2 id="connect" class="connect__title">Заявка на подключение</h2>
+            <div class="connect main-form">
+                <form action="https://formspree.io/f/mzbkwkpz" method="POST">
+                    <fieldset>
+                        <legend>Заявка на подключение</legend>
+                        <div class="main-form__inner">
+                            <label>
+                                Имя
+                                <input class="user-name" type="text" name="name-user" maxlength="111" required placeholder="*Ваше Имя">
+                            </label>
+                            <label>
+                                Телефон
+                                <input class="user-phone" type="text" name="phone-user"  maxlength="20" required placeholder="*+79502115481" pattern="^\+[ 0-9]+$">
+                                <span class="main-form__error">Введите телефон в формате:  +79502115481</span> 
+                            </label>
+                            <label>
+                                Адресс
+                                <input class="user-adress" type="text" name="adress-user"  maxlength="200" placeholder="Адрес места подключения: Звездная 2г/кв 84">
+                            </label>
+                            <label>
+                                Выберите тариф
+                                <select class="user-tarif" name="tarifuser-piter-house">
+                                    <option value="tarif-m" selected>M</option>
+                                    <option value="tarif-l">L</option>
+                                    <option value="tarif-xxl">XXL</option>
+                                </select>
+                            </label>
+                            <label>
+                                Ваши пожелания
+                                <textarea class="user-comment" name="comment-user" maxlength="200" placeholder="Напишите нам, что считаете нужным"></textarea>
+                            </label>
+                            <button class="btn btn-submit">Отправить заявку</button>
+                        </div>
+                        <span class="confedicial">
+                            <input id="rules" type="checkbox" checked>
+                            Нажимая кнопку, вы даете согласие на обработку<a href="https://domru.ru/policy.pdf?_ga=2.146691063.2114560030.1604661467-1474562174.1592923451" target="_blank"> персональных данных</a></span>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="naim-footer">
+        <div class="main-footer__row container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру"></a>
+            <span class="privacy">© 2020 Сайт не является средством массовой информации и действует на основании партнерских услуг с АО «ЭР-Телеком Холдинг»</span>
+        </div>  
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

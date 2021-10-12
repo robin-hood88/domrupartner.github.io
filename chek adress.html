@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/styles-preprocessor.css">
+    <title>Проверить адрес подключения Дом.ру</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру" width="70" height="70"></a>
+            <span class="select-sity nojs">Выберите город</span>
+            <noscript>
+                <a href="#" class="select-sity">Выберите город</a>
+            </noscript>
+            <select id="select-sity" class="sitys"
+                onchange="window.location.href=this.options[this.selectedIndex].value">
+                <option value="index.html">Омск</option>
+                <option value="St.Petersburg.html">Санкт-Петербург</option>
+                <option value="Moscow.html">Москва</option>
+            </select>
+            <a class="header-icon__phone" href="tel:+73852594241">Звонок с сайта<svg class="icon icon-phone">
+                    <use xlink:href="#icon-phone"></use>
+                    <symbol id="icon-phone" viewBox="0 0 32 32">
+                        <path
+                            d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                        </path>
+                    </symbol>
+                </svg></a>
+        </div>
+        <nav class="main-menu container">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="main-menu__links">
+                <li class="main-menu__link active"><a href="#price-list">Тарифы для квартиры</a></li>
+                <li class="main-menu__link"><a href="chastnyy-dom.html#chastnyy-dom">Тарифы для частного дома</a></li>
+                <li class="main-menu__link"><a href="help.html#help">Помощь</a></li>
+                <li class="main-menu__link"><a href="chek adress.html">Проерить адресс</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="check-adress">
+            <iframe src="https://omsk.dom.ru/request/address"  scrolling=no></iframe> 
+        </section>
+    </main>
+    <footer class="naim-footer">
+        <div class="main-footer__row container">
+            <a href="index.html"><img src="img/domru.svg" alt="Логотип Дом.ру"></a>
+            <span class="privacy">© 2020 Сайт не является средством массовой информации и действует на основании
+                партнерских услуг с АО «ЭР-Телеком Холдинг»</span>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
