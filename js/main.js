@@ -5,8 +5,8 @@ var btn = priceList.querySelectorAll('.btn');
 var linkActive = document.querySelector('.main-menu__link.active');
 var menu = document.querySelector('.menu__toggle');
 
-var spanHidden = document.querySelector('.nojs').style.display="inline-block";
-var selectSity = document.querySelector('#select-sity').style.display="inline-block";
+/*var spanHidden = document.querySelector('.nojs').style.display="inline-block";*/
+/*var selectSity = document.querySelector('#select-sity').style.display="inline-block";*/
 
 let setTarif = function(option,btn) {
     btn.addEventListener('click', function() {

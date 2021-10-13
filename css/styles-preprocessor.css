@@ -40,10 +40,10 @@ body {
   text-decoration: none;
 }
 
-span.select-sity.nojs,
+/*span.select-sity.nojs,
 #select-sity {
   display: none;
-}
+}*/
 
 /*-----------------------------*/
 /*-----------------------------*/
@@ -57,29 +57,35 @@ span.select-sity.nojs,
   margin-bottom: 100px;
   line-height: 0;
 }
+
 .header-logo .header-icon__phone {
-  width: 40px;
-  height: 40px;
-  margin-left: 40px;
   font-size: 0;
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-left: 34%;
 }
 
+@media (min-width: 768px) {
+  .header-logo .header-icon__phone {
+    margin-left: 25px;
+  }
+}
+
+
 .header-logo a {
-  display: inline-block;
+  /*display: inline-block;*/
+  font-size: 0;
   color: inherit;
   text-decoration: none;
   vertical-align: bottom;
 }
 
-.header-logo span {
+/*.header-logo span {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
-}
+}*/
 
 .sitys {
   display: inline-block;
@@ -346,6 +352,9 @@ span.select-sity.nojs,
 }
 
 .price-list__title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
   font-size: 1.5em;
   font-weight: 600;
@@ -359,9 +368,7 @@ span.select-sity.nojs,
 
 .stock::after {
   content: 'акция';
-  display: block;
-  right: 0;
-  top: 0;
+  display: inline-block;
   font-size: 19px;
   line-height: 1.5;
   background-color: red;
@@ -369,13 +376,6 @@ span.select-sity.nojs,
   border-radius: 15px;
 }
 
-
-@media (min-width: 325px) {
-  .stock::after {
-    position: absolute;
-  }
-
-}
 .price-list__cost {
   font-size: 0.95em;
 }
@@ -457,7 +457,6 @@ span.select-sity.nojs,
 /*Стили
  для мобильных устройств*/
 .icon {
-  position: absolute;
   display: inline-block;
   stroke-width: 0;
   stroke: currentColor;
